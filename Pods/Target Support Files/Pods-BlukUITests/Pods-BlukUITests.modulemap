@@ -1,0 +1,6 @@
+framework module Pods_BlukUITests {
+  umbrella header "Pods-BlukUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module RSMasterTableViewKit {
+  umbrella header "RSMasterTableViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

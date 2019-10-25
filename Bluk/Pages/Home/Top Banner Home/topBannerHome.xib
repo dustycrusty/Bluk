@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Asap-Italic.ttf">
+            <string>Asap-Italic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="topBannerHome" customModule="Bluk" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="t9b-tR-SMI"/>
+                <outlet property="mainTitle" destination="VhB-vj-Ny6" id="A5b-K8-vc0"/>
+                <outlet property="subTitle" destination="8NA-xs-9Lu" id="Yep-Yu-Iz6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-gy-aFr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhB-vj-Ny6">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="hello">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="17" name="Asap-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NA-xs-9Lu">
+                            <rect key="frame" x="0.0" y="43.5" width="375" height="43.5"/>
+                            <fontDescription key="fontDescription" name="Asap-Italic" family="Asap" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VhB-vj-Ny6" firstAttribute="height" secondItem="8NA-xs-9Lu" secondAttribute="height" id="guJ-tz-KdB"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NVs-gy-aFr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2uj-eI-ZFK"/>
+                <constraint firstItem="NVs-gy-aFr" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="HQ8-Hu-R3S"/>
+                <constraint firstItem="NVs-gy-aFr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="UA6-JT-20c"/>
+                <constraint firstItem="NVs-gy-aFr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xcn-iv-THy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-55.200000000000003" y="-405.24737631184411"/>
+        </view>
+    </objects>
+</document>
